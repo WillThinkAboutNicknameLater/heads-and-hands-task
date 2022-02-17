@@ -10,7 +10,7 @@
 Пример исполнения программы: (количество массивов = 15, размер массива = 1 ... 30, элемент массива = 300 ... 400)
 
 ```sh
-HeadsHandsTask 15 1 30 300 400
+./HeadsHandsTask 15 1 30 300 400
 ```
 
 ![Screenshot1](/Screenshots/program-execution-example.png)
