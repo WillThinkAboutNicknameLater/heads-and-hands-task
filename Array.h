@@ -142,17 +142,17 @@ Array<T> &Array<T>::operator=(const Array<T> &other) {
 }
 
 template<typename T>
-Array<T> &Array<T>::operator=(Array<T> &&x) noexcept {
-    if (&x == this) {
+Array<T> &Array<T>::operator=(Array<T> &&other) noexcept {
+    if (&other == this) {
         return *this;
     }
 
     delete[] m_data;
 
-    m_size = x.m_size;
-    m_data = x.m_data;
-    x.m_size = 0;
-    x.m_data = nullptr;
+    m_size = other.m_size;
+    m_data = other.m_data;
+    other.m_size = 0;
+    other.m_data = nullptr;
 
     return *this;
 }
